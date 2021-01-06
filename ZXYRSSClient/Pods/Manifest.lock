@@ -1,0 +1,23 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - ZXYModels (1.0.0):
+    - HandyJSON (= 5.0.2)
+
+DEPENDENCIES:
+  - ZXYModels (from `./ThirdPartFrameworks/ZXYModels`)
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+
+EXTERNAL SOURCES:
+  ZXYModels:
+    :path: "./ThirdPartFrameworks/ZXYModels"
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  ZXYModels: 80f45687f20c7660ed748618a6e9543bf6e6c1a7
+
+PODFILE CHECKSUM: c7eacd637f4f15a6a47d2dc98c30dd793895b41f
+
+COCOAPODS: 1.10.0.rc.1

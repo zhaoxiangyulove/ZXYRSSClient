@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234488A12B05E2B4CBA6C6B5 /* Pods_ZXYRSSClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5147B77D268AA252180352 /* Pods_ZXYRSSClient.framework */; };
 		A28402B825A46577003EDC2A /* ZXYRSSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28402B725A46577003EDC2A /* ZXYRSSClientApp.swift */; };
 		A28402BA25A46577003EDC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28402B925A46577003EDC2A /* ContentView.swift */; };
 		A28402BC25A4657A003EDC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28402BB25A4657A003EDC2A /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5147B77D268AA252180352 /* Pods_ZXYRSSClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXYRSSClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D1A5248D1A6C270485CBE8 /* Pods-ZXYRSSClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYRSSClient.release.xcconfig"; path = "Target Support Files/Pods-ZXYRSSClient/Pods-ZXYRSSClient.release.xcconfig"; sourceTree = "<group>"; };
 		A28402B425A46577003EDC2A /* ZXYRSSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXYRSSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28402B725A46577003EDC2A /* ZXYRSSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXYRSSClientApp.swift; sourceTree = "<group>"; };
 		A28402B925A46577003EDC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A28402BB25A4657A003EDC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28402BE25A4657A003EDC2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A28402C025A4657A003EDC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C058F6370D662680C6A984F4 /* Pods-ZXYRSSClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYRSSClient.debug.xcconfig"; path = "Target Support Files/Pods-ZXYRSSClient/Pods-ZXYRSSClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,19 +31,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234488A12B05E2B4CBA6C6B5 /* Pods_ZXYRSSClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BE0828FB13E67B54EE2E290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5147B77D268AA252180352 /* Pods_ZXYRSSClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AD7ED158D401296F80608C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C058F6370D662680C6A984F4 /* Pods-ZXYRSSClient.debug.xcconfig */,
+				79D1A5248D1A6C270485CBE8 /* Pods-ZXYRSSClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A28402AB25A46577003EDC2A = {
 			isa = PBXGroup;
 			children = (
 				A28402B625A46577003EDC2A /* ZXYRSSClient */,
 				A28402B525A46577003EDC2A /* Products */,
+				5AD7ED158D401296F80608C5 /* Pods */,
+				3BE0828FB13E67B54EE2E290 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		A28402B525A46577003EDC2A /* Products */ = {
 			isa = PBXGroup;
@@ -76,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A28402C325A4657A003EDC2A /* Build configuration list for PBXNativeTarget "ZXYRSSClient" */;
 			buildPhases = (
+				49636CFC0036B80FBB5A2B38 /* [CP] Check Pods Manifest.lock */,
 				A28402B025A46577003EDC2A /* Sources */,
 				A28402B125A46577003EDC2A /* Frameworks */,
 				A28402B225A46577003EDC2A /* Resources */,
+				042D9F0173D2A453439768A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		042D9F0173D2A453439768A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYRSSClient/Pods-ZXYRSSClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYRSSClient/Pods-ZXYRSSClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXYRSSClient/Pods-ZXYRSSClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49636CFC0036B80FBB5A2B38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXYRSSClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A28402B025A46577003EDC2A /* Sources */ = {
@@ -264,6 +335,7 @@
 		};
 		A28402C425A4657A003EDC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C058F6370D662680C6A984F4 /* Pods-ZXYRSSClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +358,7 @@
 		};
 		A28402C525A4657A003EDC2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D1A5248D1A6C270485CBE8 /* Pods-ZXYRSSClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

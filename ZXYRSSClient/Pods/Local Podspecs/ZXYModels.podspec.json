@@ -1,0 +1,29 @@
+{
+  "name": "ZXYModels",
+  "version": "1.0.0",
+  "summary": "model local repo",
+  "description": "model local repo",
+  "homepage": "https://github.com/zhaoxiangyulove/ZXYRSSClient",
+  "source": {
+    "git": ""
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhaoxiangyu": "zhaoxiangyulove@gmail.com"
+  },
+  "source_files": [
+    "Source/*.swift",
+    "Source/**/*.swift"
+  ],
+  "platforms": {
+    "ios": "11.0"
+  },
+  "dependencies": {
+    "HandyJSON": [
+      "5.0.2"
+    ]
+  }
+}
