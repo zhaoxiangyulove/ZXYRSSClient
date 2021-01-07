@@ -1,0 +1,6 @@
+framework module KimWatermark {
+  umbrella header "KimWatermark-umbrella.h"
+
+  export *
+  module * { export * }
+}

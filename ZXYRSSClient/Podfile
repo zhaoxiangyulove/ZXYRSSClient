@@ -1,12 +1,15 @@
 platform :ios, '13.0'
 
+# Local pods for Kim
+def localPods
+  pod 'ZXYModels', :path => './ThirdPartFrameworks/ZXYModels'
+end
+
 target 'ZXYRSSClient' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   inhibit_all_warnings!
 
   # Pods for ZXYRSSClient
-  # Local pods for Kim
-  pod 'ZXYModels', :path => './ThirdPartFrameworks/ZXYModels'
-
+  localPods
 end

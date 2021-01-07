@@ -1,9 +1,11 @@
 PODS:
   - HandyJSON (5.0.2)
+  - KimWatermark (1.0.0)
   - ZXYModels (1.0.0):
     - HandyJSON (= 5.0.2)
 
 DEPENDENCIES:
+  - KimWatermark (from `./ThirdPartFrameworks/KimWatermark`)
   - ZXYModels (from `./ThirdPartFrameworks/ZXYModels`)
 
 SPEC REPOS:
@@ -11,13 +13,16 @@ SPEC REPOS:
     - HandyJSON
 
 EXTERNAL SOURCES:
+  KimWatermark:
+    :path: "./ThirdPartFrameworks/KimWatermark"
   ZXYModels:
     :path: "./ThirdPartFrameworks/ZXYModels"
 
 SPEC CHECKSUMS:
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  KimWatermark: c56129d38cd0190479a5751b73ebe26f1f614ef8
   ZXYModels: 80f45687f20c7660ed748618a6e9543bf6e6c1a7
 
-PODFILE CHECKSUM: c7eacd637f4f15a6a47d2dc98c30dd793895b41f
+PODFILE CHECKSUM: 364d0ece79b54f7de78d2edb50102a1a2676d0b4
 
 COCOAPODS: 1.10.0.rc.1
